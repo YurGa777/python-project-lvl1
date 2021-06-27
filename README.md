@@ -5,3 +5,6 @@
 
 ## Flake8 linter status
 [![Linter status](https://github.com/YurGa777/python-project-lvl1/actions/workflows/github-actions-make-lint.yml/badge.svg)](https://github.com/YurGa777/python-project-lvl1/actions)
+
+## asciinema record for lesson 5
+<a href="https://asciinema.org/a/422581" target="_blank"><img src="https://asciinema.org/a/422581.svg" /></a>
