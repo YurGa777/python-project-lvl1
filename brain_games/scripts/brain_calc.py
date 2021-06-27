@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-from brain_games.games.find_even import find_even
+from brain_games.games.find_result import find_result
 
 
 def main():
-    find_even()
+    find_result()
 
 
 if __name__ == '__main__':

@@ -8,3 +8,6 @@
 
 ## asciinema record for lesson 5
 <a href="https://asciinema.org/a/422581" target="_blank"><img src="https://asciinema.org/a/422581.svg" /></a>
+
+## asciinema record for lesson 6
+<a href="https://asciinema.org/a/422588" target="_blank"><img src="https://asciinema.org/a/422588.svg" /></a>
