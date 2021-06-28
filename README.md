@@ -17,3 +17,6 @@
 
 ## asciinema record for lesson 8
 <a href="https://asciinema.org/a/422698" target="_blank"><img src="https://asciinema.org/a/422698.svg" /></a>
+
+## asciinema record for lesson 9
+<a href="https://asciinema.org/a/422706" target="_blank"><img src="https://asciinema.org/a/422706.svg" /></a>
