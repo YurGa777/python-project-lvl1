@@ -31,7 +31,7 @@ def find_progression():
         right_answer = progression[missed_number_count]
 
 # hiding right answer
-        progression[missed_number_count] = ". ."
+        progression[missed_number_count] = ".."
 
 # transforming progresiion from list into string
         progression_text = str('')
