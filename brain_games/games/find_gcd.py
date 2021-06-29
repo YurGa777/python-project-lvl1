@@ -20,7 +20,7 @@ def find_gcd():
         number_one = randint(1, 50)
         number_two = randint(1, 50)
 
-        print("Question: {}  {}".format(number_one, number_two))
+        print("Question: {} {}".format(number_one, number_two))
 
         right_answer = gcd_calc(number_one, number_two)
 
