@@ -25,7 +25,7 @@ def find_prime():
         else:
             right_answer = "no"
 
-        print("Question: ", number)
+        print("Question: {}".format(number))
         answer = prompt.string('Your answer: ')
 
         if str.lower(answer) == right_answer:
