@@ -23,10 +23,10 @@ def find_even():
 
         else:
             right_answer = "no"
-        print("Question: ", number)
+        print("Question: {} ".format(number))
         answer = prompt.string('Your answer: ')
 
-        if answer == right_answer:
+        if str.lower(answer) == right_answer:
             print('Correct !')
 
         else:
