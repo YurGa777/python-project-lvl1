@@ -1,43 +1,37 @@
 #!/usr/bin/env python
 
 from random import randint
-import prompt
-from brain_games.cli import welcome_user
-from brain_games.gcd_calc import gcd_calc
 
-name = welcome_user()
+question_text = 'Find the greatest common divisor of given numbers'
 
 
-def find_gcd():
+def get_question_and_answer():
 
-    # Giving number of attemts
-    attempt_number = 1
+    number_one = randint(1, 50)
+    number_two = randint(1, 50)
+
+    question = ("Question: {} {}".format(number_one, number_two))
+
+    right_answer = get_gcd(number_one, number_two)
+
+    return question, right_answer
 
 
-# Finding right answer
-    print('Find the greatest common divisor of given numbers')
-    while attempt_number <= 3:
-        number_one = randint(1, 50)
-        number_two = randint(1, 50)
+def get_gcd(number_one, number_two):
+    if number_one >= number_two:
+        common_div = number_two
+    else:
+        common_div = number_one
 
-        print("Question: {} {}".format(number_one, number_two))
-
-        right_answer = gcd_calc(number_one, number_two)
-
-        answer = prompt.string('Your answer: ')
-
-        if answer == str(right_answer):
-            print('Correct !')
-
-        else:
-            return print(''''{}' is wrong answer ;(. Correct answer was '{}'.
-Let's try again, {}!'''.format(answer, right_answer, name))
-        attempt_number = attempt_number + 1
-    return print('Congratulations, {}!'.format(name))
+    while common_div > 0:
+        if number_two % common_div == 0 and number_one % common_div == 0:
+            return common_div
+        common_div -= 1
+    return common_div
 
 
 def main():
-    find_gcd()
+    get_question_and_answer()
 
 
 if __name__ == '__main__':

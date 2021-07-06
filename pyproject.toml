@@ -18,6 +18,7 @@ prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.9.2"
+rope = "^0.19.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

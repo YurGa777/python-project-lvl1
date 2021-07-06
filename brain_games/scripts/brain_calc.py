@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 
-from brain_games.games.find_result import find_result
+from brain_games.games.find_result import get_question_and_answer
+from brain_games.games.find_result import question_text
+from brain_games.games.brain_main import game_engine
 
 
 def main():
-    find_result()
+    game_engine(question_text, get_question_and_answer)
 
 
 if __name__ == '__main__':
