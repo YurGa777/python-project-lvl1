@@ -6,7 +6,6 @@ question_text = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def get_question_and_answer():
-
     number = randint(1, 50)
 
     if prime_calc(number) is True:
@@ -21,7 +20,6 @@ def get_question_and_answer():
 
 
 def prime_calc(number):
-
     divider = 2
 
     if number < 2:
@@ -35,11 +33,3 @@ def prime_calc(number):
         divider += 1
 
     return True
-
-
-def main():
-    get_question_and_answer()
-
-
-if __name__ == '__main__':
-    main()

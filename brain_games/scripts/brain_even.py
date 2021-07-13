@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 
-from brain_games.games.find_even import get_question_and_answer
-from brain_games.games.find_even import question_text
-from brain_games.games.brain_main import game_engine
+from brain_games.games import even
+from brain_games.brain_main import game_engine
 
 
 def main():
-    game_engine(question_text, get_question_and_answer)
+    game_engine(even)
 
 
 if __name__ == '__main__':

@@ -6,7 +6,6 @@ question_text = 'Find the greatest common divisor of given numbers'
 
 
 def get_question_and_answer():
-
     number_one = randint(1, 50)
     number_two = randint(1, 50)
 
@@ -18,21 +17,18 @@ def get_question_and_answer():
 
 
 def get_gcd(number_one, number_two):
+
     if number_one >= number_two:
         common_div = number_two
+
     else:
         common_div = number_one
 
     while common_div > 0:
+
         if number_two % common_div == 0 and number_one % common_div == 0:
             return common_div
+
         common_div -= 1
+
     return common_div
-
-
-def main():
-    get_question_and_answer()
-
-
-if __name__ == '__main__':
-    main()

@@ -25,17 +25,10 @@ def get_question_and_answer():
 
 # transforming progresiion from list into string
     progression_text = str('')
+
     for i in progression:
         progression_text = progression_text + str(i) + ' '
 
     question = "Question: {}".format(progression_text)
 
     return question, right_answer
-
-
-def main():
-    get_question_and_answer()
-
-
-if __name__ == '__main__':
-    main()
