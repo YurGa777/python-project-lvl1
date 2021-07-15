@@ -10,18 +10,23 @@ def game_engine(game_module):
 
     print(game_module.question_text)
 
-    attempt_number = 1
+    number_of_attempts = 3
+    attempt_count = 1
 
-    while attempt_number <= 3:
+    while attempt_count <= number_of_attempts:
         question, right_answer = game_module.get_question_and_answer()
         print(question)
         answer = prompt.string('Your answer: ')
 
         if str(answer) == str(right_answer):
             print('Correct !')
+            attempt_count += 1
 
         else:
-            return print(''''{}' is wrong answer ;(. Correct answer was '{}'.
-Let's try again, {}!'''.format(answer, right_answer, name))
-        attempt_number = attempt_number + 1
+            print("'{}' is wrong answer ;(.".format(answer))
+            print("Correct answer was '{}'.".format(right_answer))
+            print("Let's try again, {}!".format(name))
+
+            return
+
     return print('Congratulations, {}!'.format(name))
