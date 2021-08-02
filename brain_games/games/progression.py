@@ -5,7 +5,7 @@ from random import randint
 question_text = 'What number is missing in the progression?'
 
 
-def get_question_and_answer():
+def generate_progression():
     number_start = randint(1, 50)
     progression_int = randint(1, 10)
     number_quantity = randint(5, 10)
@@ -18,7 +18,7 @@ def get_question_and_answer():
     missed_number_count = randint(0, number_quantity - 1)
 
 # saving right answer
-    right_answer = progression[missed_number_count]
+    missed_number = str(progression[missed_number_count])
 
 # hiding right answer
     progression[missed_number_count] = ".."
@@ -27,8 +27,15 @@ def get_question_and_answer():
     progression_text = str('')
 
     for i in progression:
-        progression_text = progression_text + str(i) + ' '
+        progression_text += str(i) + ' '
 
-    question = "Question: {}".format(progression_text)
+    progression_text = progression_text[:-1]
+
+    return progression_text, missed_number
+
+
+def get_question_and_answer():
+
+    question, right_answer = generate_progression()
 
     return question, right_answer

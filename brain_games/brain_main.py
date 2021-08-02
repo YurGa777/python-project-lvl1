@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 
 import prompt
-from brain_games.cli import welcome_user
+
+
+def welcome_user():
+    print("Welcome to the Brain Games, my dear friend!")
+    name = prompt.string('May I have your name? ')
+    print('Hello, {}'.format(name))
+    return name
 
 
 def game_engine(game_module):
@@ -15,10 +21,10 @@ def game_engine(game_module):
 
     while attempt_count <= number_of_attempts:
         question, right_answer = game_module.get_question_and_answer()
-        print(question)
+        print("Question: {}".format(question))
         answer = prompt.string('Your answer: ')
 
-        if str(answer) == str(right_answer):
+        if answer == right_answer:
             print('Correct !')
             attempt_count += 1
 
