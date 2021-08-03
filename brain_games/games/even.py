@@ -14,13 +14,9 @@ def is_even(number):
 
 def get_question_and_answer():
     question = randint(1, 1000)
+    right_answer = "no"
 
     if is_even(question) is True:
         right_answer = "yes"
-
-    else:
-        right_answer = "no"
-
-    question = ('{}'.format(question))
 
     return question, right_answer

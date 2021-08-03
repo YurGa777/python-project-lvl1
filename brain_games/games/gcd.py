@@ -19,11 +19,11 @@ def get_gcd(number_one, number_two):
 
 
 def get_question_and_answer():
-    number_one = randint(1, 50)
-    number_two = randint(1, 50)
+    first_number = randint(1, 50)
+    second_number = randint(1, 50)
 
-    question = ('{} {}'.format(number_one, number_two))
+    question = ('{} {}'.format(first_number, second_number))
 
-    right_answer = str(get_gcd(number_one, number_two))
+    right_answer = str(get_gcd(first_number, second_number))
 
     return question, right_answer

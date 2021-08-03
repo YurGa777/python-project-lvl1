@@ -22,14 +22,10 @@ def is_prime(number):
 
 
 def get_question_and_answer():
-    number = randint(1, 50)
+    question = randint(1, 50)
+    right_answer = "no"
 
-    if is_prime(number) is True:
+    if is_prime(question) is True:
         right_answer = "yes"
-
-    else:
-        right_answer = "no"
-
-    question = ('{}'.format(number))
 
     return question, right_answer
