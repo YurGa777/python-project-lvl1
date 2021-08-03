@@ -10,6 +10,12 @@ def welcome_user():
     return name
 
 
+def get_user_answer(question):
+    print("Question: {}".format(question))
+    answer = prompt.string('Your answer: ')
+    return answer
+
+
 def game_engine(game_module):
 
     name = welcome_user()
@@ -21,8 +27,7 @@ def game_engine(game_module):
 
     while attempt_count <= number_of_attempts:
         question, right_answer = game_module.get_question_and_answer()
-        print("Question: {}".format(question))
-        answer = prompt.string('Your answer: ')
+        answer = get_user_answer(question)
 
         if answer == right_answer:
             print('Correct !')
